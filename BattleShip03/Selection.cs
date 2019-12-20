@@ -31,15 +31,15 @@ namespace BattleShip03
 
         private void btnBoard20_Click(object sender, EventArgs e)
         {
-            shipChoices = new Ships[3];
-            numAllowed = 4;
+            shipChoices = new Ships[4];
+            numAllowed = 5;
             SizeChoice();
         }
 
         private void btnBoard10_Click(object sender, EventArgs e)
         {
-            shipChoices = new Ships[4];
-            numAllowed = 5;
+            shipChoices = new Ships[3];
+            numAllowed = 4;
             SizeChoice();
         }
 
@@ -51,7 +51,7 @@ namespace BattleShip03
 
         private void btnAircraft_Click(object sender, EventArgs e)
         {
-            Ships destroyer = new Ships();
+            Ships aircraft = new Ships();
 
         }
 
@@ -82,14 +82,18 @@ namespace BattleShip03
         private void btnDestroyer_Click(object sender, EventArgs e)
         {
             Ships dest = new Ships();
-
+            BoatChoice(dest);
         }
 
         private void BoatChoice(Ships boat)
         {
             if (numSelected <= numAllowed)
             {
-
+                shipChoices[numSelected] = boat;
+            }
+            if (numSelected == numAllowed)
+            {
+                btnBattleship.Enabled = false ; btnAircraft.Enabled = false ; btnMedical.Enabled = false ; btnFrigate.Enabled = false ; btnSubmarine.Enabled = false ; btnDestroyer.Enabled = false;
             }
         }
         
