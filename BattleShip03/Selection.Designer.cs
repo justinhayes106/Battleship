@@ -30,7 +30,7 @@
         {
             this.Button2 = new System.Windows.Forms.Button();
             this.Button1 = new System.Windows.Forms.Button();
-            this.Label2 = new System.Windows.Forms.Label();
+            this.statlable = new System.Windows.Forms.Label();
             this.Label1 = new System.Windows.Forms.Label();
             this.btnRandom = new System.Windows.Forms.Button();
             this.btnCont = new System.Windows.Forms.Button();
@@ -65,14 +65,13 @@
             this.Button1.Text = "Y";
             this.Button1.UseVisualStyleBackColor = true;
             // 
-            // Label2
+            // statlable
             // 
-            this.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Label2.Location = new System.Drawing.Point(586, 224);
-            this.Label2.Name = "Label2";
-            this.Label2.Size = new System.Drawing.Size(159, 98);
-            this.Label2.TabIndex = 31;
-            this.Label2.Text = "-Stat\r\n\r\n-Ability 1\r\n\r\n- Ability 2\r\n";
+            this.statlable.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.statlable.Location = new System.Drawing.Point(586, 224);
+            this.statlable.Name = "statlable";
+            this.statlable.Size = new System.Drawing.Size(159, 98);
+            this.statlable.TabIndex = 31;
             // 
             // Label1
             // 
@@ -109,6 +108,7 @@
             this.btnReset.TabIndex = 27;
             this.btnReset.Text = "Reset";
             this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // btnBack
             // 
@@ -222,7 +222,7 @@
             this.ClientSize = new System.Drawing.Size(766, 404);
             this.Controls.Add(this.Button2);
             this.Controls.Add(this.Button1);
-            this.Controls.Add(this.Label2);
+            this.Controls.Add(this.statlable);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.btnRandom);
             this.Controls.Add(this.btnCont);
@@ -247,7 +247,7 @@
 
         internal System.Windows.Forms.Button Button2;
         internal System.Windows.Forms.Button Button1;
-        internal System.Windows.Forms.Label Label2;
+        internal System.Windows.Forms.Label statlable;
         internal System.Windows.Forms.Label Label1;
         internal System.Windows.Forms.Button btnRandom;
         internal System.Windows.Forms.Button btnCont;

@@ -24,21 +24,21 @@ namespace BattleShip03
 
         private void btnBoard7_Click(object sender, EventArgs e)
         {
-            shipChoices = new Ships[2];
+            shipChoices = new Ships[3];
             numAllowed = 3;
             SizeChoice();
         }
 
         private void btnBoard20_Click(object sender, EventArgs e)
         {
-            shipChoices = new Ships[4];
+            shipChoices = new Ships[5];
             numAllowed = 5;
             SizeChoice();
         }
 
         private void btnBoard10_Click(object sender, EventArgs e)
         {
-            shipChoices = new Ships[3];
+            shipChoices = new Ships[4];
             numAllowed = 4;
             SizeChoice();
         }
@@ -51,38 +51,45 @@ namespace BattleShip03
 
         private void btnAircraft_Click(object sender, EventArgs e)
         {
-            Ships aircraft = new Ships();
+            Ships aircraft = new Ships("a", "b", "c");
+            BoatChoice(aircraft);
+            btnAircraft.Enabled = false;
 
         }
 
         private void btnBattleship_Click(object sender, EventArgs e)
         {
-            Ships battle = new Ships();
-
+            Ships battle = new Ships("a", "b", "c", "d");
+            BoatChoice(battle);
+            btnBattleship.Enabled = false;
         }
 
         private void btnFrigate_Click(object sender, EventArgs e)
         {
-            Ships frig = new Ships();
-
+            Ships frig = new Ships("a");
+            BoatChoice(frig);
+            btnFrigate.Enabled = false;
         }
 
         private void btnMedical_Click(object sender, EventArgs e)
         {
             Ships med = new Ships();
-
+            BoatChoice(med);
+            btnMedical.Enabled = false;
         }
 
         private void btnSubmarine_Click(object sender, EventArgs e)
         {
             Ships sub = new Ships();
-
+            BoatChoice(sub);
+            btnSubmarine.Enabled = false;
         }
 
         private void btnDestroyer_Click(object sender, EventArgs e)
         {
-            Ships dest = new Ships();
+            Ships dest = new Ships("a", "b");
             BoatChoice(dest);
+            btnDestroyer.Enabled = false;
         }
 
         private void BoatChoice(Ships boat)
@@ -90,12 +97,25 @@ namespace BattleShip03
             if (numSelected <= numAllowed)
             {
                 shipChoices[numSelected] = boat;
+                statlable.Text += boat.ShipName + "\n";
+                numSelected++;
             }
             if (numSelected == numAllowed)
             {
-                btnBattleship.Enabled = false ; btnAircraft.Enabled = false ; btnMedical.Enabled = false ; btnFrigate.Enabled = false ; btnSubmarine.Enabled = false ; btnDestroyer.Enabled = false;
+                MessageBox.Show("Max Ships Chosen");
+                btnDestroyer.Enabled = false; btnSubmarine.Enabled = false; btnMedical.Enabled = false; btnFrigate.Enabled = false; btnBattleship.Enabled = false; btnAircraft.Enabled = false;
+
             }
         }
-        
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            btnDestroyer.Enabled = false; btnSubmarine.Enabled = false; btnMedical.Enabled = false; btnFrigate.Enabled = false; btnBattleship.Enabled = false; btnAircraft.Enabled = false;
+            btnBoard10.Enabled = true ; btnBoard7.Enabled = true ; btnBoard20.Enabled = true ;
+            statlable.Text = "";
+            Array.Clear(shipChoices, 0, shipChoices.Length);
+            numSelected = 0;
+            numAllowed = 0;
+        }
     }
 }

@@ -23,6 +23,8 @@ namespace BattleShip03
             form.Show();
             Menu form1 = new Menu();
             form1.Close();
+
+            Human human = new Human();
         }
     }
 }
