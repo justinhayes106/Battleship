@@ -107,5 +107,48 @@
   <ItemGroup>
     <None Include="Resources\niceShip.PNG" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_2quit.PNG" />
+    <None Include="Resources\text_quit.PNG" />
+    <None Include="Resources\background_x2.PNG" />
+    <None Include="Resources\text_menu.PNG" />
+    <None Include="Resources\background_x.PNG" />
+    <None Include="Resources\background_blue.PNG" />
+    <None Include="Resources\title_text1.PNG" />
+    <None Include="Resources\text_stats.PNG" />
+    <None Include="Resources\text_reset.PNG" />
+    <None Include="Resources\text_play.PNG" />
+    <None Include="Resources\text_help.PNG" />
+    <None Include="Resources\text_back.PNG" />
+    <None Include="Resources\title_text.PNG" />
+    <None Include="Resources\background_grey.PNG" />
+    <None Include="Resources\20_text.PNG" />
+    <None Include="Resources\10_text.PNG" />
+    <None Include="Resources\7_text.PNG" />
+    <None Include="Resources\sub_top.PNG" />
+    <None Include="Resources\sub_side.PNG" />
+    <None Include="Resources\med_top.PNG" />
+    <None Include="Resources\med_side.PNG" />
+    <None Include="Resources\frigate_top.PNG" />
+    <None Include="Resources\frigate_side.PNG" />
+    <None Include="Resources\destroyer_top.PNG" />
+    <None Include="Resources\destroyer_side.PNG" />
+    <None Include="Resources\carrier_top.PNG" />
+    <None Include="Resources\carrier_side.PNG" />
+    <None Include="Resources\battleship_top.PNG" />
+    <None Include="Resources\battleship_side.PNG" />
+    <Content Include="Resources\pictures\battleship_side.PNG" />
+    <Content Include="Resources\pictures\battleship_top.PNG" />
+    <Content Include="Resources\pictures\carrier_side.PNG" />
+    <Content Include="Resources\pictures\carrier_top.PNG" />
+    <Content Include="Resources\pictures\destroyer_side.PNG" />
+    <Content Include="Resources\pictures\destroyer_top.PNG" />
+    <Content Include="Resources\pictures\frigate_side.PNG" />
+    <Content Include="Resources\pictures\frigate_top.PNG" />
+    <Content Include="Resources\pictures\med_side.PNG" />
+    <Content Include="Resources\pictures\med_top.PNG" />
+    <Content Include="Resources\pictures\sub_side.PNG" />
+    <Content Include="Resources\pictures\sub_top.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

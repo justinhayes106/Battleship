@@ -118,7 +118,94 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="background_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_x.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_text.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_menu.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_quit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="niceShip" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\niceShip.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_x2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_x2.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrier_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrier_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleship_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleship_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sub_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sub_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_help" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_help.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="title_text1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\title_text1.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigate_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frigate_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyer_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\destroyer_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="battleship_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\battleship_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_back.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="carrier_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\carrier_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="med_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\med_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_blue" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_blue.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_stats" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_stats.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_play" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_play.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="20_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\20_text.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="destroyer_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\destroyer_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="background_grey" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\background_grey.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sub_side" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sub_side.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7_text.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="frigate_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\frigate_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_reset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_reset.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10_text.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="med_top" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\med_top.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_2quit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_2quit.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

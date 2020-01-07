@@ -21,10 +21,19 @@ namespace BattleShip03
         {
             Selection form = new Selection();
             form.Show();
-            Menu form1 = new Menu();
-            form1.Close();
+            this.Hide();
 
             Human human = new Human();
+        }
+
+        private void btnStats_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Stats");
+        }
+
+        private void btnHelp_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Rules");
         }
     }
 }
