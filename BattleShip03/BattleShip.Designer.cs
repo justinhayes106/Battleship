@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btnAudio = new System.Windows.Forms.Button();
-            this.btnStatDisplay = new System.Windows.Forms.Button();
             this.btnQuit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.a100 = new System.Windows.Forms.Button();
@@ -42,8 +41,8 @@
             this.a69 = new System.Windows.Forms.Button();
             this.a60 = new System.Windows.Forms.Button();
             this.a50 = new System.Windows.Forms.Button();
-            this.button194 = new System.Windows.Forms.Button();
-            this.button195 = new System.Windows.Forms.Button();
+            this.a59 = new System.Windows.Forms.Button();
+            this.a49 = new System.Windows.Forms.Button();
             this.a40 = new System.Windows.Forms.Button();
             this.a30 = new System.Windows.Forms.Button();
             this.a39 = new System.Windows.Forms.Button();
@@ -56,14 +55,14 @@
             this.a88 = new System.Windows.Forms.Button();
             this.a97 = new System.Windows.Forms.Button();
             this.a87 = new System.Windows.Forms.Button();
-            this.a = new System.Windows.Forms.Button();
+            this.a78 = new System.Windows.Forms.Button();
             this.a68 = new System.Windows.Forms.Button();
             this.a77 = new System.Windows.Forms.Button();
             this.a67 = new System.Windows.Forms.Button();
-            this.button152 = new System.Windows.Forms.Button();
-            this.button153 = new System.Windows.Forms.Button();
-            this.button154 = new System.Windows.Forms.Button();
-            this.button155 = new System.Windows.Forms.Button();
+            this.a58 = new System.Windows.Forms.Button();
+            this.a48 = new System.Windows.Forms.Button();
+            this.a57 = new System.Windows.Forms.Button();
+            this.a47 = new System.Windows.Forms.Button();
             this.a38 = new System.Windows.Forms.Button();
             this.a28 = new System.Windows.Forms.Button();
             this.a37 = new System.Windows.Forms.Button();
@@ -80,10 +79,10 @@
             this.a66 = new System.Windows.Forms.Button();
             this.a75 = new System.Windows.Forms.Button();
             this.a65 = new System.Windows.Forms.Button();
-            this.button172 = new System.Windows.Forms.Button();
-            this.button173 = new System.Windows.Forms.Button();
-            this.button174 = new System.Windows.Forms.Button();
-            this.button175 = new System.Windows.Forms.Button();
+            this.a56 = new System.Windows.Forms.Button();
+            this.a46 = new System.Windows.Forms.Button();
+            this.a55 = new System.Windows.Forms.Button();
+            this.a45 = new System.Windows.Forms.Button();
             this.a36 = new System.Windows.Forms.Button();
             this.a26 = new System.Windows.Forms.Button();
             this.a35 = new System.Windows.Forms.Button();
@@ -100,10 +99,10 @@
             this.a64 = new System.Windows.Forms.Button();
             this.a73 = new System.Windows.Forms.Button();
             this.a63 = new System.Windows.Forms.Button();
-            this.button132 = new System.Windows.Forms.Button();
-            this.button133 = new System.Windows.Forms.Button();
-            this.button134 = new System.Windows.Forms.Button();
-            this.button135 = new System.Windows.Forms.Button();
+            this.a54 = new System.Windows.Forms.Button();
+            this.a44 = new System.Windows.Forms.Button();
+            this.a53 = new System.Windows.Forms.Button();
+            this.a43 = new System.Windows.Forms.Button();
             this.a34 = new System.Windows.Forms.Button();
             this.a24 = new System.Windows.Forms.Button();
             this.a33 = new System.Windows.Forms.Button();
@@ -120,10 +119,10 @@
             this.a62 = new System.Windows.Forms.Button();
             this.a71 = new System.Windows.Forms.Button();
             this.a61 = new System.Windows.Forms.Button();
-            this.button116 = new System.Windows.Forms.Button();
-            this.button117 = new System.Windows.Forms.Button();
-            this.button118 = new System.Windows.Forms.Button();
-            this.button119 = new System.Windows.Forms.Button();
+            this.a52 = new System.Windows.Forms.Button();
+            this.a42 = new System.Windows.Forms.Button();
+            this.a51 = new System.Windows.Forms.Button();
+            this.a41 = new System.Windows.Forms.Button();
             this.a32 = new System.Windows.Forms.Button();
             this.a22 = new System.Windows.Forms.Button();
             this.a31 = new System.Windows.Forms.Button();
@@ -134,10 +133,11 @@
             this.a1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pbxShip4 = new System.Windows.Forms.PictureBox();
-            this.pbxShip3 = new System.Windows.Forms.PictureBox();
-            this.pbxShip2 = new System.Windows.Forms.PictureBox();
-            this.pbxShip1 = new System.Windows.Forms.PictureBox();
+            this.btnShip4 = new System.Windows.Forms.Button();
+            this.btnShip3 = new System.Windows.Forms.Button();
+            this.btnShip2 = new System.Windows.Forms.Button();
+            this.btnShip1 = new System.Windows.Forms.Button();
+            this.cbxOrientation = new System.Windows.Forms.CheckBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.b1 = new System.Windows.Forms.Button();
             this.btnMenu = new System.Windows.Forms.Button();
@@ -242,35 +242,22 @@
             this.b100 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnAudio
             // 
-            this.btnAudio.Location = new System.Drawing.Point(107, 1);
+            this.btnAudio.Location = new System.Drawing.Point(105, -1);
             this.btnAudio.Name = "btnAudio";
-            this.btnAudio.Size = new System.Drawing.Size(110, 34);
+            this.btnAudio.Size = new System.Drawing.Size(50, 34);
             this.btnAudio.TabIndex = 1;
             this.btnAudio.Text = "Audio";
             this.btnAudio.UseVisualStyleBackColor = true;
             // 
-            // btnStatDisplay
-            // 
-            this.btnStatDisplay.Location = new System.Drawing.Point(213, 1);
-            this.btnStatDisplay.Name = "btnStatDisplay";
-            this.btnStatDisplay.Size = new System.Drawing.Size(610, 34);
-            this.btnStatDisplay.TabIndex = 2;
-            this.btnStatDisplay.Text = "btnStatDisplay";
-            this.btnStatDisplay.UseVisualStyleBackColor = true;
-            // 
             // btnQuit
             // 
-            this.btnQuit.Location = new System.Drawing.Point(822, 1);
+            this.btnQuit.Location = new System.Drawing.Point(150, -1);
             this.btnQuit.Name = "btnQuit";
-            this.btnQuit.Size = new System.Drawing.Size(86, 34);
+            this.btnQuit.Size = new System.Drawing.Size(44, 34);
             this.btnQuit.TabIndex = 3;
             this.btnQuit.Text = "Quit";
             this.btnQuit.UseVisualStyleBackColor = true;
@@ -288,8 +275,8 @@
             this.panel1.Controls.Add(this.a69);
             this.panel1.Controls.Add(this.a60);
             this.panel1.Controls.Add(this.a50);
-            this.panel1.Controls.Add(this.button194);
-            this.panel1.Controls.Add(this.button195);
+            this.panel1.Controls.Add(this.a59);
+            this.panel1.Controls.Add(this.a49);
             this.panel1.Controls.Add(this.a40);
             this.panel1.Controls.Add(this.a30);
             this.panel1.Controls.Add(this.a39);
@@ -302,14 +289,14 @@
             this.panel1.Controls.Add(this.a88);
             this.panel1.Controls.Add(this.a97);
             this.panel1.Controls.Add(this.a87);
-            this.panel1.Controls.Add(this.a);
+            this.panel1.Controls.Add(this.a78);
             this.panel1.Controls.Add(this.a68);
             this.panel1.Controls.Add(this.a77);
             this.panel1.Controls.Add(this.a67);
-            this.panel1.Controls.Add(this.button152);
-            this.panel1.Controls.Add(this.button153);
-            this.panel1.Controls.Add(this.button154);
-            this.panel1.Controls.Add(this.button155);
+            this.panel1.Controls.Add(this.a58);
+            this.panel1.Controls.Add(this.a48);
+            this.panel1.Controls.Add(this.a57);
+            this.panel1.Controls.Add(this.a47);
             this.panel1.Controls.Add(this.a38);
             this.panel1.Controls.Add(this.a28);
             this.panel1.Controls.Add(this.a37);
@@ -326,10 +313,10 @@
             this.panel1.Controls.Add(this.a66);
             this.panel1.Controls.Add(this.a75);
             this.panel1.Controls.Add(this.a65);
-            this.panel1.Controls.Add(this.button172);
-            this.panel1.Controls.Add(this.button173);
-            this.panel1.Controls.Add(this.button174);
-            this.panel1.Controls.Add(this.button175);
+            this.panel1.Controls.Add(this.a56);
+            this.panel1.Controls.Add(this.a46);
+            this.panel1.Controls.Add(this.a55);
+            this.panel1.Controls.Add(this.a45);
             this.panel1.Controls.Add(this.a36);
             this.panel1.Controls.Add(this.a26);
             this.panel1.Controls.Add(this.a35);
@@ -346,10 +333,10 @@
             this.panel1.Controls.Add(this.a64);
             this.panel1.Controls.Add(this.a73);
             this.panel1.Controls.Add(this.a63);
-            this.panel1.Controls.Add(this.button132);
-            this.panel1.Controls.Add(this.button133);
-            this.panel1.Controls.Add(this.button134);
-            this.panel1.Controls.Add(this.button135);
+            this.panel1.Controls.Add(this.a54);
+            this.panel1.Controls.Add(this.a44);
+            this.panel1.Controls.Add(this.a53);
+            this.panel1.Controls.Add(this.a43);
             this.panel1.Controls.Add(this.a34);
             this.panel1.Controls.Add(this.a24);
             this.panel1.Controls.Add(this.a33);
@@ -366,10 +353,10 @@
             this.panel1.Controls.Add(this.a62);
             this.panel1.Controls.Add(this.a71);
             this.panel1.Controls.Add(this.a61);
-            this.panel1.Controls.Add(this.button116);
-            this.panel1.Controls.Add(this.button117);
-            this.panel1.Controls.Add(this.button118);
-            this.panel1.Controls.Add(this.button119);
+            this.panel1.Controls.Add(this.a52);
+            this.panel1.Controls.Add(this.a42);
+            this.panel1.Controls.Add(this.a51);
+            this.panel1.Controls.Add(this.a41);
             this.panel1.Controls.Add(this.a32);
             this.panel1.Controls.Add(this.a22);
             this.panel1.Controls.Add(this.a31);
@@ -495,27 +482,27 @@
             this.a50.UseVisualStyleBackColor = true;
             this.a50.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button194
+            // a59
             // 
-            this.button194.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button194.Location = new System.Drawing.Point(205, 143);
-            this.button194.Margin = new System.Windows.Forms.Padding(1);
-            this.button194.Name = "button194";
-            this.button194.Size = new System.Drawing.Size(27, 30);
-            this.button194.TabIndex = 195;
-            this.button194.UseVisualStyleBackColor = true;
-            this.button194.Click += new System.EventHandler(this.button184_Click);
+            this.a59.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a59.Location = new System.Drawing.Point(205, 143);
+            this.a59.Margin = new System.Windows.Forms.Padding(1);
+            this.a59.Name = "a59";
+            this.a59.Size = new System.Drawing.Size(27, 30);
+            this.a59.TabIndex = 195;
+            this.a59.UseVisualStyleBackColor = true;
+            this.a59.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button195
+            // a49
             // 
-            this.button195.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button195.Location = new System.Drawing.Point(205, 117);
-            this.button195.Margin = new System.Windows.Forms.Padding(1);
-            this.button195.Name = "button195";
-            this.button195.Size = new System.Drawing.Size(27, 30);
-            this.button195.TabIndex = 194;
-            this.button195.UseVisualStyleBackColor = true;
-            this.button195.Click += new System.EventHandler(this.button184_Click);
+            this.a49.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a49.Location = new System.Drawing.Point(205, 117);
+            this.a49.Margin = new System.Windows.Forms.Padding(1);
+            this.a49.Name = "a49";
+            this.a49.Size = new System.Drawing.Size(27, 30);
+            this.a49.TabIndex = 194;
+            this.a49.UseVisualStyleBackColor = true;
+            this.a49.Click += new System.EventHandler(this.button184_Click);
             // 
             // a40
             // 
@@ -649,16 +636,16 @@
             this.a87.UseVisualStyleBackColor = true;
             this.a87.Click += new System.EventHandler(this.button184_Click);
             // 
-            // a
+            // a78
             // 
-            this.a.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.a.Location = new System.Drawing.Point(180, 197);
-            this.a.Margin = new System.Windows.Forms.Padding(1);
-            this.a.Name = "a";
-            this.a.Size = new System.Drawing.Size(27, 30);
-            this.a.TabIndex = 181;
-            this.a.UseVisualStyleBackColor = true;
-            this.a.Click += new System.EventHandler(this.button184_Click);
+            this.a78.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a78.Location = new System.Drawing.Point(180, 197);
+            this.a78.Margin = new System.Windows.Forms.Padding(1);
+            this.a78.Name = "a78";
+            this.a78.Size = new System.Drawing.Size(27, 30);
+            this.a78.TabIndex = 181;
+            this.a78.UseVisualStyleBackColor = true;
+            this.a78.Click += new System.EventHandler(this.button184_Click);
             // 
             // a68
             // 
@@ -693,49 +680,49 @@
             this.a67.UseVisualStyleBackColor = true;
             this.a67.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button152
+            // a58
             // 
-            this.button152.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button152.Location = new System.Drawing.Point(180, 143);
-            this.button152.Margin = new System.Windows.Forms.Padding(1);
-            this.button152.Name = "button152";
-            this.button152.Size = new System.Drawing.Size(27, 30);
-            this.button152.TabIndex = 177;
-            this.button152.UseVisualStyleBackColor = true;
-            this.button152.Click += new System.EventHandler(this.button184_Click);
+            this.a58.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a58.Location = new System.Drawing.Point(180, 143);
+            this.a58.Margin = new System.Windows.Forms.Padding(1);
+            this.a58.Name = "a58";
+            this.a58.Size = new System.Drawing.Size(27, 30);
+            this.a58.TabIndex = 177;
+            this.a58.UseVisualStyleBackColor = true;
+            this.a58.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button153
+            // a48
             // 
-            this.button153.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button153.Location = new System.Drawing.Point(180, 117);
-            this.button153.Margin = new System.Windows.Forms.Padding(1);
-            this.button153.Name = "button153";
-            this.button153.Size = new System.Drawing.Size(27, 30);
-            this.button153.TabIndex = 176;
-            this.button153.UseVisualStyleBackColor = true;
-            this.button153.Click += new System.EventHandler(this.button184_Click);
+            this.a48.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a48.Location = new System.Drawing.Point(180, 117);
+            this.a48.Margin = new System.Windows.Forms.Padding(1);
+            this.a48.Name = "a48";
+            this.a48.Size = new System.Drawing.Size(27, 30);
+            this.a48.TabIndex = 176;
+            this.a48.UseVisualStyleBackColor = true;
+            this.a48.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button154
+            // a57
             // 
-            this.button154.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button154.Location = new System.Drawing.Point(155, 143);
-            this.button154.Margin = new System.Windows.Forms.Padding(1);
-            this.button154.Name = "button154";
-            this.button154.Size = new System.Drawing.Size(27, 30);
-            this.button154.TabIndex = 175;
-            this.button154.UseVisualStyleBackColor = true;
-            this.button154.Click += new System.EventHandler(this.button184_Click);
+            this.a57.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a57.Location = new System.Drawing.Point(155, 143);
+            this.a57.Margin = new System.Windows.Forms.Padding(1);
+            this.a57.Name = "a57";
+            this.a57.Size = new System.Drawing.Size(27, 30);
+            this.a57.TabIndex = 175;
+            this.a57.UseVisualStyleBackColor = true;
+            this.a57.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button155
+            // a47
             // 
-            this.button155.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button155.Location = new System.Drawing.Point(155, 117);
-            this.button155.Margin = new System.Windows.Forms.Padding(1);
-            this.button155.Name = "button155";
-            this.button155.Size = new System.Drawing.Size(27, 30);
-            this.button155.TabIndex = 174;
-            this.button155.UseVisualStyleBackColor = true;
-            this.button155.Click += new System.EventHandler(this.button184_Click);
+            this.a47.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a47.Location = new System.Drawing.Point(155, 117);
+            this.a47.Margin = new System.Windows.Forms.Padding(1);
+            this.a47.Name = "a47";
+            this.a47.Size = new System.Drawing.Size(27, 30);
+            this.a47.TabIndex = 174;
+            this.a47.UseVisualStyleBackColor = true;
+            this.a47.Click += new System.EventHandler(this.button184_Click);
             // 
             // a38
             // 
@@ -913,49 +900,49 @@
             this.a65.UseVisualStyleBackColor = true;
             this.a65.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button172
+            // a56
             // 
-            this.button172.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button172.Location = new System.Drawing.Point(130, 143);
-            this.button172.Margin = new System.Windows.Forms.Padding(1);
-            this.button172.Name = "button172";
-            this.button172.Size = new System.Drawing.Size(27, 30);
-            this.button172.TabIndex = 157;
-            this.button172.UseVisualStyleBackColor = true;
-            this.button172.Click += new System.EventHandler(this.button184_Click);
+            this.a56.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a56.Location = new System.Drawing.Point(130, 143);
+            this.a56.Margin = new System.Windows.Forms.Padding(1);
+            this.a56.Name = "a56";
+            this.a56.Size = new System.Drawing.Size(27, 30);
+            this.a56.TabIndex = 157;
+            this.a56.UseVisualStyleBackColor = true;
+            this.a56.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button173
+            // a46
             // 
-            this.button173.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button173.Location = new System.Drawing.Point(130, 117);
-            this.button173.Margin = new System.Windows.Forms.Padding(1);
-            this.button173.Name = "button173";
-            this.button173.Size = new System.Drawing.Size(27, 30);
-            this.button173.TabIndex = 156;
-            this.button173.UseVisualStyleBackColor = true;
-            this.button173.Click += new System.EventHandler(this.button184_Click);
+            this.a46.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a46.Location = new System.Drawing.Point(130, 117);
+            this.a46.Margin = new System.Windows.Forms.Padding(1);
+            this.a46.Name = "a46";
+            this.a46.Size = new System.Drawing.Size(27, 30);
+            this.a46.TabIndex = 156;
+            this.a46.UseVisualStyleBackColor = true;
+            this.a46.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button174
+            // a55
             // 
-            this.button174.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button174.Location = new System.Drawing.Point(106, 143);
-            this.button174.Margin = new System.Windows.Forms.Padding(1);
-            this.button174.Name = "button174";
-            this.button174.Size = new System.Drawing.Size(27, 30);
-            this.button174.TabIndex = 155;
-            this.button174.UseVisualStyleBackColor = true;
-            this.button174.Click += new System.EventHandler(this.button184_Click);
+            this.a55.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a55.Location = new System.Drawing.Point(106, 143);
+            this.a55.Margin = new System.Windows.Forms.Padding(1);
+            this.a55.Name = "a55";
+            this.a55.Size = new System.Drawing.Size(27, 30);
+            this.a55.TabIndex = 155;
+            this.a55.UseVisualStyleBackColor = true;
+            this.a55.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button175
+            // a45
             // 
-            this.button175.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button175.Location = new System.Drawing.Point(106, 117);
-            this.button175.Margin = new System.Windows.Forms.Padding(1);
-            this.button175.Name = "button175";
-            this.button175.Size = new System.Drawing.Size(27, 30);
-            this.button175.TabIndex = 154;
-            this.button175.UseVisualStyleBackColor = true;
-            this.button175.Click += new System.EventHandler(this.button184_Click);
+            this.a45.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a45.Location = new System.Drawing.Point(106, 117);
+            this.a45.Margin = new System.Windows.Forms.Padding(1);
+            this.a45.Name = "a45";
+            this.a45.Size = new System.Drawing.Size(27, 30);
+            this.a45.TabIndex = 154;
+            this.a45.UseVisualStyleBackColor = true;
+            this.a45.Click += new System.EventHandler(this.button184_Click);
             // 
             // a36
             // 
@@ -1133,49 +1120,49 @@
             this.a63.UseVisualStyleBackColor = true;
             this.a63.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button132
+            // a54
             // 
-            this.button132.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button132.Location = new System.Drawing.Point(81, 143);
-            this.button132.Margin = new System.Windows.Forms.Padding(1);
-            this.button132.Name = "button132";
-            this.button132.Size = new System.Drawing.Size(27, 30);
-            this.button132.TabIndex = 137;
-            this.button132.UseVisualStyleBackColor = true;
-            this.button132.Click += new System.EventHandler(this.button184_Click);
+            this.a54.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a54.Location = new System.Drawing.Point(81, 143);
+            this.a54.Margin = new System.Windows.Forms.Padding(1);
+            this.a54.Name = "a54";
+            this.a54.Size = new System.Drawing.Size(27, 30);
+            this.a54.TabIndex = 137;
+            this.a54.UseVisualStyleBackColor = true;
+            this.a54.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button133
+            // a44
             // 
-            this.button133.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button133.Location = new System.Drawing.Point(81, 117);
-            this.button133.Margin = new System.Windows.Forms.Padding(1);
-            this.button133.Name = "button133";
-            this.button133.Size = new System.Drawing.Size(27, 30);
-            this.button133.TabIndex = 136;
-            this.button133.UseVisualStyleBackColor = true;
-            this.button133.Click += new System.EventHandler(this.button184_Click);
+            this.a44.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a44.Location = new System.Drawing.Point(81, 117);
+            this.a44.Margin = new System.Windows.Forms.Padding(1);
+            this.a44.Name = "a44";
+            this.a44.Size = new System.Drawing.Size(27, 30);
+            this.a44.TabIndex = 136;
+            this.a44.UseVisualStyleBackColor = true;
+            this.a44.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button134
+            // a53
             // 
-            this.button134.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button134.Location = new System.Drawing.Point(57, 143);
-            this.button134.Margin = new System.Windows.Forms.Padding(1);
-            this.button134.Name = "button134";
-            this.button134.Size = new System.Drawing.Size(27, 30);
-            this.button134.TabIndex = 135;
-            this.button134.UseVisualStyleBackColor = true;
-            this.button134.Click += new System.EventHandler(this.button184_Click);
+            this.a53.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a53.Location = new System.Drawing.Point(57, 143);
+            this.a53.Margin = new System.Windows.Forms.Padding(1);
+            this.a53.Name = "a53";
+            this.a53.Size = new System.Drawing.Size(27, 30);
+            this.a53.TabIndex = 135;
+            this.a53.UseVisualStyleBackColor = true;
+            this.a53.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button135
+            // a43
             // 
-            this.button135.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button135.Location = new System.Drawing.Point(57, 117);
-            this.button135.Margin = new System.Windows.Forms.Padding(1);
-            this.button135.Name = "button135";
-            this.button135.Size = new System.Drawing.Size(27, 30);
-            this.button135.TabIndex = 134;
-            this.button135.UseVisualStyleBackColor = true;
-            this.button135.Click += new System.EventHandler(this.button184_Click);
+            this.a43.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a43.Location = new System.Drawing.Point(57, 117);
+            this.a43.Margin = new System.Windows.Forms.Padding(1);
+            this.a43.Name = "a43";
+            this.a43.Size = new System.Drawing.Size(27, 30);
+            this.a43.TabIndex = 134;
+            this.a43.UseVisualStyleBackColor = true;
+            this.a43.Click += new System.EventHandler(this.button184_Click);
             // 
             // a34
             // 
@@ -1353,49 +1340,49 @@
             this.a61.UseVisualStyleBackColor = true;
             this.a61.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button116
+            // a52
             // 
-            this.button116.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button116.Location = new System.Drawing.Point(32, 143);
-            this.button116.Margin = new System.Windows.Forms.Padding(1);
-            this.button116.Name = "button116";
-            this.button116.Size = new System.Drawing.Size(27, 30);
-            this.button116.TabIndex = 117;
-            this.button116.UseVisualStyleBackColor = true;
-            this.button116.Click += new System.EventHandler(this.button184_Click);
+            this.a52.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a52.Location = new System.Drawing.Point(32, 143);
+            this.a52.Margin = new System.Windows.Forms.Padding(1);
+            this.a52.Name = "a52";
+            this.a52.Size = new System.Drawing.Size(27, 30);
+            this.a52.TabIndex = 117;
+            this.a52.UseVisualStyleBackColor = true;
+            this.a52.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button117
+            // a42
             // 
-            this.button117.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button117.Location = new System.Drawing.Point(32, 117);
-            this.button117.Margin = new System.Windows.Forms.Padding(1);
-            this.button117.Name = "button117";
-            this.button117.Size = new System.Drawing.Size(27, 30);
-            this.button117.TabIndex = 116;
-            this.button117.UseVisualStyleBackColor = true;
-            this.button117.Click += new System.EventHandler(this.button184_Click);
+            this.a42.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a42.Location = new System.Drawing.Point(32, 117);
+            this.a42.Margin = new System.Windows.Forms.Padding(1);
+            this.a42.Name = "a42";
+            this.a42.Size = new System.Drawing.Size(27, 30);
+            this.a42.TabIndex = 116;
+            this.a42.UseVisualStyleBackColor = true;
+            this.a42.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button118
+            // a51
             // 
-            this.button118.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button118.Location = new System.Drawing.Point(8, 143);
-            this.button118.Margin = new System.Windows.Forms.Padding(1);
-            this.button118.Name = "button118";
-            this.button118.Size = new System.Drawing.Size(27, 30);
-            this.button118.TabIndex = 115;
-            this.button118.UseVisualStyleBackColor = true;
-            this.button118.Click += new System.EventHandler(this.button184_Click);
+            this.a51.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a51.Location = new System.Drawing.Point(8, 143);
+            this.a51.Margin = new System.Windows.Forms.Padding(1);
+            this.a51.Name = "a51";
+            this.a51.Size = new System.Drawing.Size(27, 30);
+            this.a51.TabIndex = 115;
+            this.a51.UseVisualStyleBackColor = true;
+            this.a51.Click += new System.EventHandler(this.button184_Click);
             // 
-            // button119
+            // a41
             // 
-            this.button119.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button119.Location = new System.Drawing.Point(8, 117);
-            this.button119.Margin = new System.Windows.Forms.Padding(1);
-            this.button119.Name = "button119";
-            this.button119.Size = new System.Drawing.Size(27, 30);
-            this.button119.TabIndex = 114;
-            this.button119.UseVisualStyleBackColor = true;
-            this.button119.Click += new System.EventHandler(this.button184_Click);
+            this.a41.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.a41.Location = new System.Drawing.Point(8, 117);
+            this.a41.Margin = new System.Windows.Forms.Padding(1);
+            this.a41.Name = "a41";
+            this.a41.Size = new System.Drawing.Size(27, 30);
+            this.a41.TabIndex = 114;
+            this.a41.UseVisualStyleBackColor = true;
+            this.a41.Click += new System.EventHandler(this.button184_Click);
             // 
             // a32
             // 
@@ -1496,10 +1483,11 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.DarkGray;
-            this.panel3.Controls.Add(this.pbxShip4);
-            this.panel3.Controls.Add(this.pbxShip3);
-            this.panel3.Controls.Add(this.pbxShip2);
-            this.panel3.Controls.Add(this.pbxShip1);
+            this.panel3.Controls.Add(this.btnShip4);
+            this.panel3.Controls.Add(this.btnShip3);
+            this.panel3.Controls.Add(this.btnShip2);
+            this.panel3.Controls.Add(this.btnShip1);
+            this.panel3.Controls.Add(this.cbxOrientation);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Location = new System.Drawing.Point(630, 351);
             this.panel3.Margin = new System.Windows.Forms.Padding(1);
@@ -1507,53 +1495,72 @@
             this.panel3.Size = new System.Drawing.Size(264, 324);
             this.panel3.TabIndex = 106;
             // 
-            // pbxShip4
+            // btnShip4
             // 
-            this.pbxShip4.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pbxShip4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxShip4.Location = new System.Drawing.Point(8, 248);
-            this.pbxShip4.Margin = new System.Windows.Forms.Padding(1);
-            this.pbxShip4.Name = "pbxShip4";
-            this.pbxShip4.Size = new System.Drawing.Size(249, 65);
-            this.pbxShip4.TabIndex = 109;
-            this.pbxShip4.TabStop = false;
-            this.pbxShip4.Click += new System.EventHandler(this.pbxShip1_Click);
+            this.btnShip4.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnShip4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShip4.Location = new System.Drawing.Point(10, 238);
+            this.btnShip4.Margin = new System.Windows.Forms.Padding(1);
+            this.btnShip4.Name = "btnShip4";
+            this.btnShip4.Size = new System.Drawing.Size(247, 55);
+            this.btnShip4.TabIndex = 115;
+            this.btnShip4.Text = "btnShip4";
+            this.btnShip4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnShip4.UseVisualStyleBackColor = false;
+            this.btnShip4.Click += new System.EventHandler(this.btnShip3_Click_1);
             // 
-            // pbxShip3
+            // btnShip3
             // 
-            this.pbxShip3.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pbxShip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxShip3.Location = new System.Drawing.Point(8, 166);
-            this.pbxShip3.Margin = new System.Windows.Forms.Padding(1);
-            this.pbxShip3.Name = "pbxShip3";
-            this.pbxShip3.Size = new System.Drawing.Size(249, 67);
-            this.pbxShip3.TabIndex = 108;
-            this.pbxShip3.TabStop = false;
-            this.pbxShip3.Click += new System.EventHandler(this.pbxShip1_Click);
+            this.btnShip3.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnShip3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShip3.Location = new System.Drawing.Point(10, 181);
+            this.btnShip3.Margin = new System.Windows.Forms.Padding(1);
+            this.btnShip3.Name = "btnShip3";
+            this.btnShip3.Size = new System.Drawing.Size(247, 55);
+            this.btnShip3.TabIndex = 114;
+            this.btnShip3.Text = "btnShip3";
+            this.btnShip3.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnShip3.UseVisualStyleBackColor = false;
+            this.btnShip3.Click += new System.EventHandler(this.btnShip3_Click_1);
             // 
-            // pbxShip2
+            // btnShip2
             // 
-            this.pbxShip2.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pbxShip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxShip2.Location = new System.Drawing.Point(8, 90);
-            this.pbxShip2.Margin = new System.Windows.Forms.Padding(1);
-            this.pbxShip2.Name = "pbxShip2";
-            this.pbxShip2.Size = new System.Drawing.Size(249, 63);
-            this.pbxShip2.TabIndex = 107;
-            this.pbxShip2.TabStop = false;
-            this.pbxShip2.Click += new System.EventHandler(this.pbxShip1_Click);
+            this.btnShip2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnShip2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShip2.Location = new System.Drawing.Point(10, 124);
+            this.btnShip2.Margin = new System.Windows.Forms.Padding(1);
+            this.btnShip2.Name = "btnShip2";
+            this.btnShip2.Size = new System.Drawing.Size(247, 55);
+            this.btnShip2.TabIndex = 113;
+            this.btnShip2.Text = "btnShip2";
+            this.btnShip2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnShip2.UseVisualStyleBackColor = false;
+            this.btnShip2.Click += new System.EventHandler(this.btnShip3_Click_1);
             // 
-            // pbxShip1
+            // btnShip1
             // 
-            this.pbxShip1.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.pbxShip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pbxShip1.Location = new System.Drawing.Point(8, 10);
-            this.pbxShip1.Margin = new System.Windows.Forms.Padding(1);
-            this.pbxShip1.Name = "pbxShip1";
-            this.pbxShip1.Size = new System.Drawing.Size(249, 64);
-            this.pbxShip1.TabIndex = 106;
-            this.pbxShip1.TabStop = false;
-            this.pbxShip1.Click += new System.EventHandler(this.pbxShip1_Click);
+            this.btnShip1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btnShip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnShip1.Location = new System.Drawing.Point(10, 65);
+            this.btnShip1.Margin = new System.Windows.Forms.Padding(1);
+            this.btnShip1.Name = "btnShip1";
+            this.btnShip1.Size = new System.Drawing.Size(247, 56);
+            this.btnShip1.TabIndex = 112;
+            this.btnShip1.Text = "btnShip1";
+            this.btnShip1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnShip1.UseVisualStyleBackColor = false;
+            this.btnShip1.Click += new System.EventHandler(this.btnShip3_Click_1);
+            // 
+            // cbxOrientation
+            // 
+            this.cbxOrientation.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxOrientation.Location = new System.Drawing.Point(20, 1);
+            this.cbxOrientation.Margin = new System.Windows.Forms.Padding(1);
+            this.cbxOrientation.Name = "cbxOrientation";
+            this.cbxOrientation.Size = new System.Drawing.Size(243, 62);
+            this.cbxOrientation.TabIndex = 110;
+            this.cbxOrientation.Text = "Horizontal Placement";
+            this.cbxOrientation.UseVisualStyleBackColor = true;
             // 
             // panel4
             // 
@@ -1579,7 +1586,7 @@
             // 
             this.btnMenu.BackgroundImage = global::BattleShip03.Properties.Resources.text_menu;
             this.btnMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnMenu.Location = new System.Drawing.Point(0, 1);
+            this.btnMenu.Location = new System.Drawing.Point(-1, -1);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(110, 34);
             this.btnMenu.TabIndex = 0;
@@ -2780,7 +2787,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(904, 685);
+            this.ClientSize = new System.Drawing.Size(903, 685);
             this.Controls.Add(this.b100);
             this.Controls.Add(this.b99);
             this.Controls.Add(this.b98);
@@ -2884,17 +2891,12 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnQuit);
-            this.Controls.Add(this.btnStatDisplay);
             this.Controls.Add(this.btnAudio);
             this.Controls.Add(this.btnMenu);
             this.Name = "BattleShip";
             this.Text = "BattleShip";
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbxShip1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2903,7 +2905,6 @@
 
         private System.Windows.Forms.Button btnMenu;
         private System.Windows.Forms.Button btnAudio;
-        private System.Windows.Forms.Button btnStatDisplay;
         private System.Windows.Forms.Button btnQuit;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
@@ -2911,10 +2912,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button b1;
         private System.Windows.Forms.Button a1;
-        private System.Windows.Forms.PictureBox pbxShip4;
-        private System.Windows.Forms.PictureBox pbxShip3;
-        private System.Windows.Forms.PictureBox pbxShip2;
-        private System.Windows.Forms.PictureBox pbxShip1;
         private System.Windows.Forms.Button a100;
         private System.Windows.Forms.Button a90;
         private System.Windows.Forms.Button a99;
@@ -2925,8 +2922,8 @@
         private System.Windows.Forms.Button a69;
         private System.Windows.Forms.Button a60;
         private System.Windows.Forms.Button a50;
-        private System.Windows.Forms.Button button194;
-        private System.Windows.Forms.Button button195;
+        private System.Windows.Forms.Button a59;
+        private System.Windows.Forms.Button a49;
         private System.Windows.Forms.Button a40;
         private System.Windows.Forms.Button a30;
         private System.Windows.Forms.Button a39;
@@ -2939,14 +2936,14 @@
         private System.Windows.Forms.Button a88;
         private System.Windows.Forms.Button a97;
         private System.Windows.Forms.Button a87;
-        private System.Windows.Forms.Button a;
+        private System.Windows.Forms.Button a78;
         private System.Windows.Forms.Button a68;
         private System.Windows.Forms.Button a77;
         private System.Windows.Forms.Button a67;
-        private System.Windows.Forms.Button button152;
-        private System.Windows.Forms.Button button153;
-        private System.Windows.Forms.Button button154;
-        private System.Windows.Forms.Button button155;
+        private System.Windows.Forms.Button a58;
+        private System.Windows.Forms.Button a48;
+        private System.Windows.Forms.Button a57;
+        private System.Windows.Forms.Button a47;
         private System.Windows.Forms.Button a38;
         private System.Windows.Forms.Button a28;
         private System.Windows.Forms.Button a37;
@@ -2963,10 +2960,10 @@
         private System.Windows.Forms.Button a66;
         private System.Windows.Forms.Button a75;
         private System.Windows.Forms.Button a65;
-        private System.Windows.Forms.Button button172;
-        private System.Windows.Forms.Button button173;
-        private System.Windows.Forms.Button button174;
-        private System.Windows.Forms.Button button175;
+        private System.Windows.Forms.Button a56;
+        private System.Windows.Forms.Button a46;
+        private System.Windows.Forms.Button a55;
+        private System.Windows.Forms.Button a45;
         private System.Windows.Forms.Button a36;
         private System.Windows.Forms.Button a26;
         private System.Windows.Forms.Button a35;
@@ -2983,10 +2980,10 @@
         private System.Windows.Forms.Button a64;
         private System.Windows.Forms.Button a73;
         private System.Windows.Forms.Button a63;
-        private System.Windows.Forms.Button button132;
-        private System.Windows.Forms.Button button133;
-        private System.Windows.Forms.Button button134;
-        private System.Windows.Forms.Button button135;
+        private System.Windows.Forms.Button a54;
+        private System.Windows.Forms.Button a44;
+        private System.Windows.Forms.Button a53;
+        private System.Windows.Forms.Button a43;
         private System.Windows.Forms.Button a34;
         private System.Windows.Forms.Button a24;
         private System.Windows.Forms.Button a33;
@@ -3003,10 +3000,10 @@
         private System.Windows.Forms.Button a62;
         private System.Windows.Forms.Button a71;
         private System.Windows.Forms.Button a61;
-        private System.Windows.Forms.Button button116;
-        private System.Windows.Forms.Button button117;
-        private System.Windows.Forms.Button button118;
-        private System.Windows.Forms.Button button119;
+        private System.Windows.Forms.Button a52;
+        private System.Windows.Forms.Button a42;
+        private System.Windows.Forms.Button a51;
+        private System.Windows.Forms.Button a41;
         private System.Windows.Forms.Button a32;
         private System.Windows.Forms.Button a22;
         private System.Windows.Forms.Button a31;
@@ -3113,5 +3110,10 @@
         private System.Windows.Forms.Button b98;
         private System.Windows.Forms.Button b99;
         private System.Windows.Forms.Button b100;
+        private System.Windows.Forms.CheckBox cbxOrientation;
+        private System.Windows.Forms.Button btnShip4;
+        private System.Windows.Forms.Button btnShip3;
+        private System.Windows.Forms.Button btnShip2;
+        private System.Windows.Forms.Button btnShip1;
     }
 }
