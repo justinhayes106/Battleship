@@ -12,10 +12,8 @@ namespace BattleShip03
         private int health;
         private string shipname;
         private string pngMsg;
-        private bool heal;
-        private bool move;
-        private bool planes;
-        private bool fatal;
+        private string strAbility;
+
         
         public string ShipName
         { get { return shipname; } set { shipname = value; } }
@@ -23,24 +21,23 @@ namespace BattleShip03
         { get { return health; } set { health = value; } }
         public int Shots
         { get { return shots; } set { shots = value; } }
-        public bool Heal
-        { get { return heal; } set { heal = value; } }
-        public bool Move
-        { get { return move; } set { move = value; } }
-        public bool Fatal
-        { get { return fatal; } set { fatal = value; } }
-        public bool Planes
-        { get { return planes; } set { planes = value; } }
         public string Picture
         { get { return pngMsg; } set { pngMsg = value; } }
+        public string Ability
+        { get { return strAbility; } set { strAbility = value; } }
+
+        public Ships()
+        {
+            ShipName = "Default";
+            Shots = 1;
+            Health = 3;
+            Ability = null;
+        }
 
         public Ships(string name)
         {
             shipname = name;
-            shots = 0;
-            health = 0;
-        }
-        
+        }   
 
         public void Attributes(Ships boat)
         {
@@ -49,35 +46,37 @@ namespace BattleShip03
                 case "Submarine":
                     boat.shots = 1;
                     boat.health = 2;
+                    boat.Ability = "Stealth";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\sub_top.PNG";
                     break;
                 case "Frigate":
                     boat.shots = 1;
                     boat.health = 2;
-                    boat.move = true;
+                    boat.Ability = "None";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\frigate_top.PNG";
                     break;
                 case "Medical Frigate":
                     boat.shots = 1;
                     boat.health = 2;
-                    boat.heal = true;
+                    boat.Ability = "Heal";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\med_top.PNG";
                     break;
                 case "Battleship":
                     boat.shots = 2;
                     boat.health = 3;
+                    boat.Ability = "Barrage";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\battleship_top.PNG";
                     break;
                 case "Aircraft Carrier":
                     boat.shots = 1;
                     boat.health = 4;
-                    boat.planes = true;
+                    boat.Ability = "Recon";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\carrier_top.PNG";
                     break;
                 case "Destroyer":
                     boat.shots = 1;
                     boat.health = 3;
-                    boat.fatal = true;
+                    boat.Ability = "Missile";
                     pngMsg = "E:\\BattleShip03\\BattleShip03\\Resources\\pictures\\destroyer_top.PNG";
                     break;
             }

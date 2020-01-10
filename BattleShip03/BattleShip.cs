@@ -45,15 +45,19 @@ namespace BattleShip03
             Ships first = shipArray[0];
             btnShip1.BackgroundImage = Image.FromFile(first.Picture);
             btnShip1.Text = first.ShipName;
+            btnShip1SPC.Text = first.Ability;
             Ships sec = shipArray[1];
             btnShip2.BackgroundImage = Image.FromFile(sec.Picture);
             btnShip2.Text = sec.ShipName;
+            btnShip2SPC.Text = sec.Ability;
             Ships third = shipArray[2];
             btnShip3.BackgroundImage = Image.FromFile(third.Picture);
             btnShip3.Text = third.ShipName;
+            btnShip3SPC.Text = third.Ability;
             Ships fourth = shipArray[3];
             btnShip4.BackgroundImage = Image.FromFile(fourth.Picture);
             btnShip4.Text = fourth.ShipName;
+            btnShip4SPC.Text = fourth.Ability;
         }
 
 
@@ -140,355 +144,364 @@ namespace BattleShip03
             Button selected = (Button)sender;
 
             Random r = new Random();
-            if (putDown == null)
+
+            if (setup == false && currentAbility == "Heal")
             {
-                MessageBox.Show("Choose a new ship and select it's orientation.");
+                //health??????????????????????????????????????????????????????/
             }
             else
             {
-                if (putDown.Health == 2)
+                if (putDown == null && setup == false)
                 {
-                    if (cbxOrientation.Checked == true) // Hori 2 Wide 
-                    {
-                        string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 1;
-
-                        if (intBase % 10 != 0 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "")
-                        {
-                            switch (putDown.ShipName)
-                            {
-                                case "Submarine":
-                                    rButtonArrayA[intBase - 1].Text = "S";
-                                    rButtonArrayA[intSec - 1].Text = "S";
-                                    if (btnShip1.Text == "Submarine") 
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Submarine")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Submarine")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Submarine")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Medical Frigate":
-                                    rButtonArrayA[intBase - 1].Text = "M";
-                                    rButtonArrayA[intSec - 1].Text = "M";
-                                    if (btnShip1.Text == "Medical Frigate")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Medical Frigate")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Medical Frigate")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Medical Frigate")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Frigate":
-                                    rButtonArrayA[intBase - 1].Text = "F";
-                                    rButtonArrayA[intSec - 1].Text = "F";
-                                    if (btnShip1.Text == "Frigate")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Frigate")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Frigate")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Frigate")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                            }
-                            putDown = null;
-                        }
-                    }
-                    else //Vertical 2 Wide
-                    {
-                        string strBase = selected.Name.Remove(0, 1); 
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 10;
-
-                        if (intBase <= 90 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "")
-                        {
-                            switch (putDown.ShipName)
-                            {
-                                case "Submarine":
-                                    rButtonArrayA[intBase - 1].Text = "S";
-                                    rButtonArrayA[intSec - 1].Text = "S";
-                                    if (btnShip1.Text == "Submarine")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Submarine")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Submarine")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Submarine")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Medical Frigate":
-                                    rButtonArrayA[intBase - 1].Text = "M";
-                                    rButtonArrayA[intSec - 1].Text = "M";
-                                    if (btnShip1.Text == "Medical Frigate")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Medical Frigate")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Medical Frigate")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Medical Frigate")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Frigate":
-                                    rButtonArrayA[intBase - 1].Text = "F";
-                                    rButtonArrayA[intSec - 1].Text = "F";
-                                    if (btnShip1.Text == "Frigate")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Frigate")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Frigate")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Frigate")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                            }
-                            putDown = null;
-                        }
-
-                    }
+                    MessageBox.Show("Choose a new ship and select it's orientation.");
                 }
-                else if (putDown.Health == 3)
+                else
                 {
-                    if (cbxOrientation.Checked == true) //3 Wide Horizontal
+                    if (putDown.Health == 2)
                     {
-                        string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 1;
-                        int intThird = intSec + 1;
-
-                        if (intBase % 10 != 0 && (intBase + 1) % 10 != 0 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "")
+                        if (cbxOrientation.Checked == true) // Hori 2 Wide 
                         {
-                            switch (putDown.ShipName)
+                            string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 1;
+
+                            if (intBase % 10 != 0 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "")
                             {
-                                case "Battleship":
-                                    rButtonArrayA[intBase - 1].Text = "B";
-                                    rButtonArrayA[intSec - 1].Text = "B";
-                                    rButtonArrayA[intThird - 1].Text = "B";
-                                    if (btnShip1.Text == "Battleship")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Battleship")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Battleship")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Battleship")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Destroyer":
-                                    rButtonArrayA[intBase - 1].Text = "D";
-                                    rButtonArrayA[intSec - 1].Text = "D";
-                                    rButtonArrayA[intThird - 1].Text = "D";
-                                    if (btnShip1.Text == "Destroyer")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Destroyer")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Destroyer")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Destroyer")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
+                                switch (putDown.ShipName)
+                                {
+                                    case "Submarine":
+                                        rButtonArrayA[intBase - 1].Text = "S";
+                                        rButtonArrayA[intSec - 1].Text = "S";
+                                        if (btnShip1.Text == "Submarine")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Submarine")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Submarine")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Submarine")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Medical Frigate":
+                                        rButtonArrayA[intBase - 1].Text = "M";
+                                        rButtonArrayA[intSec - 1].Text = "M";
+                                        if (btnShip1.Text == "Medical Frigate")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Medical Frigate")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Medical Frigate")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Medical Frigate")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Frigate":
+                                        rButtonArrayA[intBase - 1].Text = "F";
+                                        rButtonArrayA[intSec - 1].Text = "F";
+                                        if (btnShip1.Text == "Frigate")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Frigate")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Frigate")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Frigate")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                }
+                                putDown = null;
                             }
-                            putDown = null;
+                        }
+                        else //Vertical 2 Wide
+                        {
+                            string strBase = selected.Name.Remove(0, 1);
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 10;
+
+                            if (intBase <= 90 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "")
+                            {
+                                switch (putDown.ShipName)
+                                {
+                                    case "Submarine":
+                                        rButtonArrayA[intBase - 1].Text = "S";
+                                        rButtonArrayA[intSec - 1].Text = "S";
+                                        if (btnShip1.Text == "Submarine")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Submarine")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Submarine")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Submarine")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Medical Frigate":
+                                        rButtonArrayA[intBase - 1].Text = "M";
+                                        rButtonArrayA[intSec - 1].Text = "M";
+                                        if (btnShip1.Text == "Medical Frigate")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Medical Frigate")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Medical Frigate")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Medical Frigate")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Frigate":
+                                        rButtonArrayA[intBase - 1].Text = "F";
+                                        rButtonArrayA[intSec - 1].Text = "F";
+                                        if (btnShip1.Text == "Frigate")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Frigate")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Frigate")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Frigate")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                }
+                                putDown = null;
+                            }
+
                         }
                     }
-                    else
+                    else if (putDown.Health == 3)
                     {
-                        string strBase = selected.Name.Remove(0, 1); // 3 Wide Verti
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 10;
-                        int intThird = intSec + 10;
-
-                        if (intBase <= 80 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "")
+                        if (cbxOrientation.Checked == true) //3 Wide Horizontal
                         {
-                            switch (putDown.ShipName)
+                            string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 1;
+                            int intThird = intSec + 1;
+
+                            if (intBase % 10 != 0 && (intBase + 1) % 10 != 0 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "")
                             {
-                                case "Battleship":
-                                    rButtonArrayA[intBase - 1].Text = "B";
-                                    rButtonArrayA[intSec - 1].Text = "B";
-                                    rButtonArrayA[intThird - 1].Text = "B";
-                                    if (btnShip1.Text == "Battleship")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Battleship")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Battleship")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Battleship")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
-                                case "Destroyer":
-                                    rButtonArrayA[intBase - 1].Text = "D";
-                                    rButtonArrayA[intSec - 1].Text = "D";
-                                    rButtonArrayA[intThird - 1].Text = "D";
-                                    if (btnShip1.Text == "Destroyer")
-                                    {
-                                        btnShip1.Enabled = false;
-                                    }
-                                    else if (btnShip2.Text == "Destroyer")
-                                    {
-                                        btnShip2.Enabled = false;
-                                    }
-                                    else if (btnShip3.Text == "Destroyer")
-                                    {
-                                        btnShip3.Enabled = false;
-                                    }
-                                    else if (btnShip4.Text == "Destroyer")
-                                    {
-                                        btnShip4.Enabled = false;
-                                    }
-                                    break;
+                                switch (putDown.ShipName)
+                                {
+                                    case "Battleship":
+                                        rButtonArrayA[intBase - 1].Text = "B";
+                                        rButtonArrayA[intSec - 1].Text = "B";
+                                        rButtonArrayA[intThird - 1].Text = "B";
+                                        if (btnShip1.Text == "Battleship")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Battleship")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Battleship")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Battleship")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Destroyer":
+                                        rButtonArrayA[intBase - 1].Text = "D";
+                                        rButtonArrayA[intSec - 1].Text = "D";
+                                        rButtonArrayA[intThird - 1].Text = "D";
+                                        if (btnShip1.Text == "Destroyer")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Destroyer")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Destroyer")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Destroyer")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                }
+                                putDown = null;
                             }
-                            putDown = null;
+                        }
+                        else
+                        {
+                            string strBase = selected.Name.Remove(0, 1); // 3 Wide Verti
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 10;
+                            int intThird = intSec + 10;
+
+                            if (intBase <= 80 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "")
+                            {
+                                switch (putDown.ShipName)
+                                {
+                                    case "Battleship":
+                                        rButtonArrayA[intBase - 1].Text = "B";
+                                        rButtonArrayA[intSec - 1].Text = "B";
+                                        rButtonArrayA[intThird - 1].Text = "B";
+                                        if (btnShip1.Text == "Battleship")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Battleship")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Battleship")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Battleship")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                    case "Destroyer":
+                                        rButtonArrayA[intBase - 1].Text = "D";
+                                        rButtonArrayA[intSec - 1].Text = "D";
+                                        rButtonArrayA[intThird - 1].Text = "D";
+                                        if (btnShip1.Text == "Destroyer")
+                                        {
+                                            btnShip1.Enabled = false;
+                                        }
+                                        else if (btnShip2.Text == "Destroyer")
+                                        {
+                                            btnShip2.Enabled = false;
+                                        }
+                                        else if (btnShip3.Text == "Destroyer")
+                                        {
+                                            btnShip3.Enabled = false;
+                                        }
+                                        else if (btnShip4.Text == "Destroyer")
+                                        {
+                                            btnShip4.Enabled = false;
+                                        }
+                                        break;
+                                }
+                                putDown = null;
+                            }
                         }
                     }
+                    else if (putDown.Health == 4)
+                    {
+                        if (cbxOrientation.Checked == true) //Hori Airc
+                        {
+                            string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 1;
+                            int intThird = intSec + 1;
+                            int intFourth = intThird + 1;
+
+
+                            if (intBase % 10 != 0 && (intBase + 1) % 10 != 0 && (intBase + 2) % 10 != 0 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "" && rButtonArrayA[intFourth - 1].Text == "")
+                            {
+                                rButtonArrayA[intBase - 1].Text = "A";
+                                rButtonArrayA[intSec - 1].Text = "A";
+                                rButtonArrayA[intThird - 1].Text = "A";
+                                rButtonArrayA[intFourth - 1].Text = "A";
+                                if (btnShip1.Text == "Aircraft Carrier")
+                                {
+                                    btnShip1.Enabled = false;
+                                }
+                                else if (btnShip2.Text == "Aircraft Carrier")
+                                {
+                                    btnShip2.Enabled = false;
+                                }
+                                else if (btnShip3.Text == "Aircraft Carrier")
+                                {
+                                    btnShip3.Enabled = false;
+                                }
+                                else if (btnShip4.Text == "Aircraft Carrier")
+                                {
+                                    btnShip4.Enabled = false;
+                                }
+                                putDown = null;
+                            }
+
+                        }
+                        else
+                        {
+                            string strBase = selected.Name.Remove(0, 1);
+                            int intBase = Convert.ToInt16(strBase);
+                            int intSec = intBase + 10;
+                            int intThird = intSec + 10;
+                            int intFourth = intThird + 10;
+
+                            if (intBase <= 70 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "" && rButtonArrayA[intFourth - 1].Text == "")
+                            {
+                                rButtonArrayA[intBase - 1].Text = "A";
+                                rButtonArrayA[intSec - 1].Text = "A";
+                                rButtonArrayA[intThird - 1].Text = "A";
+                                rButtonArrayA[intFourth - 1].Text = "A";
+                                if (btnShip1.Text == "Aircraft Carrier")
+                                {
+                                    btnShip1.Enabled = false;
+                                }
+                                else if (btnShip2.Text == "Aircraft Carrier")
+                                {
+                                    btnShip2.Enabled = false;
+                                }
+                                else if (btnShip3.Text == "Aircraft Carrier")
+                                {
+                                    btnShip3.Enabled = false;
+                                }
+                                else if (btnShip4.Text == "Aircraft Carrier")
+                                {
+                                    btnShip4.Enabled = false;
+                                }
+                                putDown = null;
+                            }
+
+                        }
+                    }
+
                 }
-                else if (putDown.Health == 4)
-                {
-                    if (cbxOrientation.Checked == true) //Hori Airc
-                    {
-                        string strBase = selected.Name.Remove(0, 1); //PREVENT x9 +
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 1;
-                        int intThird = intSec + 1;
-                        int intFourth = intThird + 1;
-
-
-                        if (intBase % 10 != 0 && (intBase + 1) % 10 != 0 && (intBase + 2) % 10 != 0 &&  rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "" && rButtonArrayA[intFourth - 1].Text == "")
-                        {
-                            rButtonArrayA[intBase - 1].Text = "A";
-                            rButtonArrayA[intSec - 1].Text = "A";
-                            rButtonArrayA[intThird - 1].Text = "A";
-                            rButtonArrayA[intFourth - 1].Text = "A";
-                            if (btnShip1.Text == "Aircraft Carrier")
-                            {
-                                btnShip1.Enabled = false;
-                            }
-                            else if (btnShip2.Text == "Aircraft Carrier")
-                            {
-                                btnShip2.Enabled = false;
-                            }
-                            else if (btnShip3.Text == "Aircraft Carrier")
-                            {
-                                btnShip3.Enabled = false;
-                            }
-                            else if (btnShip4.Text == "Aircraft Carrier")
-                            {
-                                btnShip4.Enabled = false;
-                            }
-                            putDown = null;
-                        }
-
-                    }
-                    else
-                    {
-                        string strBase = selected.Name.Remove(0, 1);
-                        int intBase = Convert.ToInt16(strBase);
-                        int intSec = intBase + 10;
-                        int intThird = intSec + 10;
-                        int intFourth = intThird + 10;
-
-                        if (intBase <= 70 && rButtonArrayA[intBase - 1].Text == "" && rButtonArrayA[intSec - 1].Text == "" && rButtonArrayA[intThird - 1].Text == "" && rButtonArrayA[intFourth - 1].Text == "") 
-                        {
-                            rButtonArrayA[intBase - 1].Text = "A";
-                            rButtonArrayA[intSec - 1].Text = "A";
-                            rButtonArrayA[intThird - 1].Text = "A";
-                            rButtonArrayA[intFourth - 1].Text = "A";
-                            if (btnShip1.Text == "Aircraft Carrier")
-                            {
-                                btnShip1.Enabled = false;
-                            }
-                            else if (btnShip2.Text == "Aircraft Carrier")
-                            {
-                                btnShip2.Enabled = false;
-                            }
-                            else if (btnShip3.Text == "Aircraft Carrier")
-                            {
-                                btnShip3.Enabled = false;
-                            }
-                            else if (btnShip4.Text == "Aircraft Carrier")
-                            {
-                                btnShip4.Enabled = false;
-                            }
-                            putDown = null;
-                        }
-
-                    }
-                }
-
             }
+
 
             if (btnShip1.Enabled == false && btnShip2.Enabled == false && btnShip3.Enabled == false && btnShip4.Enabled == false)
             {
@@ -507,36 +520,90 @@ namespace BattleShip03
 
         private void b100_Click(object sender, EventArgs e)
         {
+            Button selection = (Button)sender;
+
             if (setup)
             {
-                if (shotsUsed <= 3)
+                if (currentAbility != "")
                 {
-                    Button selection = (Button)sender;
-                    Selected(selection);
-                    shotsUsed++;
-                }
-                if (shotsUsed == 4)
-                {
-                    shotsUsed = 0;
-                    int shotsFired = 0;
-                    int boatsLeft = 0;
-                    foreach (Ships ship in EnemyShipArray)
+                    switch (currentAbility)
                     {
-                        boatsLeft++;
-                    } 
-                    foreach (Ships ship in EnemyShipArray)
-                    {
-                        Random r = new Random();
-                        do
-                        {
-                            int ranShot = r.Next(1, 101);
-                            if (rButtonArrayA[ranShot - 1].Text != "H")
+                        case "Recon":
+                            string strBase = selection.Name.Remove(0, 1);
+                            int intBase = Convert.ToInt16(strBase);
+                            int int1 = intBase + 1; //MR
+                            int int2 = intBase - 9; //TR
+                            int int3 = intBase - 10;
+                            int int4 = intBase - 11;
+                            int int5 = intBase - 1;
+                            int int6 = intBase + 9;
+                            int int7 = intBase + 10;
+                            int int8 = intBase + 11;
+                            int[] reconArray = new int[9] { intBase, int1, int2, int3, int4, int5, int6, int7, int8 };
+                            foreach (int id in reconArray)
                             {
-                                rButtonArrayA[ranShot - 1].Text = "H";
-                                rButtonArrayA[ranShot - 1].BackgroundImage = Image.FromFile("E:\\BattleShip03\\BattleShip03\\Resources\\background_x.PNG");
-                                shotsFired++;
+                                if (rButtonArray[id].Text != "" && rButtonArray[id].Text != "H" && rButtonArray[id].Text != "S")
+                                {
+                                    rButtonArray[id].BackColor = Color.Blue;
+                                }
                             }
-                        } while (shotsFired != boatsLeft);
+                            break;
+                        case "Missile":
+                            string hitID = selection.Text;
+                            if (hitID != "" && hitID != "H")
+                            {
+                                foreach (Button btn in rButtonArray)
+                                {
+                                    if (btn.Text == hitID)
+                                    {
+                                        Selected(btn);
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                MessageBox.Show("Miss!");
+                            }
+                            break;
+                        case "Barrage":
+                            string strFirst = selection.Name.Remove(0, 1);
+                            int intFirst = Convert.ToInt16(strFirst); Selected(rButtonArray[intFirst]);
+                            int intSec = intFirst + 1; Selected(rButtonArray[intSec]);
+                            int intThird = intFirst - 1; Selected(rButtonArray[intThird]);
+                            break;
+                    }
+                    currentAbility = "";
+                }
+                else
+                {
+                    if (shotsUsed <= 3)
+                    {
+                        Selected(selection);
+                        shotsUsed++;
+                    }
+                    if (shotsUsed == 4)
+                    {
+                        shotsUsed = 0;
+                        int shotsFired = 0;
+                        int boatsLeft = 0;
+                        foreach (Ships ship in EnemyShipArray)
+                        {
+                            boatsLeft++;
+                        }
+                        foreach (Ships ship in EnemyShipArray)
+                        {
+                            Random r = new Random();
+                            do
+                            {
+                                int ranShot = r.Next(1, 101);
+                                if (rButtonArrayA[ranShot - 1].Text != "H")
+                                {
+                                    rButtonArrayA[ranShot - 1].Text = "H";
+                                    rButtonArrayA[ranShot - 1].BackgroundImage = Image.FromFile("E:\\BattleShip03\\BattleShip03\\Resources\\background_x.PNG");
+                                    shotsFired++;
+                                }
+                            } while (shotsFired <= boatsLeft);
+                        }
                     }
                 }
             }
@@ -601,8 +668,6 @@ namespace BattleShip03
             this.Hide();
         }
 
-
-
         private void btnShip3_Click_1(object sender, EventArgs e)
         {
             Button chosen = (Button)sender;
@@ -627,6 +692,18 @@ namespace BattleShip03
                 putDown = shipArray[3];
 
             }
+        } //Ship Choice for Putdown
+
+        private string currentAbility = "";
+
+        private void btnShip3SPC_Click_1(object sender, EventArgs e) //Special Ops
+        {
+            Button selected = (Button)sender;
+
+            currentAbility = selected.Text;
+
+            selected.Enabled = false;
+
         }
     }
 }

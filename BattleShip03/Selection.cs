@@ -94,7 +94,9 @@ namespace BattleShip03
 
         private void btnDestroyer_Click(object sender, EventArgs e)
         {
+
             Ships dest = new Ships("Destroyer");
+
             dest.Attributes(dest);
             BoatChoice(dest);
             btnDestroyer.Enabled = false;
@@ -105,14 +107,18 @@ namespace BattleShip03
         {
             statlable.Text = "Shots: " + boat.Shots + "\n" + "Health: " + boat.Health;
             string msg = "";
-            if (boat.Fatal == true)
-                msg = "This ship's surface to surface missile can eliminate in a single hit.";
-            if (boat.Heal == true)
-                msg = "This ship carries medical supplies for a one time, 3x3 health boost.";
-            if (boat.Planes == true)
-                msg = "This ship can perform recon with the use of onboard planes.";
-            if (boat.Move == true)
-                msg = "This agile ship can relocate once, onto any tiles not already fired upon.";
+            if (boat.Ability == "Missile")
+                msg = "This ship's surface to surface missile can eliminate in a single hit [1]";
+            if (boat.Ability == "Heal")
+                msg = "This ship carries medical supplies for a one time, 3x3 health boost [1]";
+            if (boat.Ability == "Recon")
+                msg = "This ship can perform recon with the use of onboard planes [1]";
+            if (boat.Ability == "Barrage")
+                msg = "This ship can activate 3 of its cannons for a deadly barrage [1]";
+            if (boat.Ability == "Stealth")
+                msg = "This sub remains beneath the surface, hiding it from recon reveal.";
+            if (boat.Ability == "None")
+                msg = "This ship is your standard gunboat.";
             statlable.Text += "\n" + msg;
         }
 
@@ -156,7 +162,9 @@ namespace BattleShip03
 
         private void btnCont_Click(object sender, EventArgs e)
         {
+
             BattleShip board = new BattleShip(shipChoices);
+
             board.Show();
             this.Close();
         }
